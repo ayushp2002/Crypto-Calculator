@@ -3,19 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Crypto Calculator</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./master.css">
     <script src="script.js" charset="utf-8"></script>
   </head>
   <body>
-    <form class="profit-calc" action="index.html" method="post">
-      <label for="qty">Quantity</label> <input type="number" name="qty"><br>
-      <label for="price">Price</label> <input type="number" name="price"><br>
-      <label for="radiobuy">Buy</label> <input type="radio" name="radio" value="">
-      <label for="radiosell">Sell</label> <input type="radio" name="radio" value="">
+    <header>
+      <h1>Crypto Calculator</h1>
+    </header>
 
-      <footer>
-        <span>&copy; Ayush Kumar May 16, 2021.</span>
-      </footer>
-    </form>
+    <div class="body">
+      <form class="profit-calc" action="index.html" method="post">
+        <label for="qty">Quantity</label> <input type="number" name="qty"><br>
+        <label for="price">Price</label> <input type="number" name="price"><br>
+        <label for="radiobuy">Buy</label> <input type="radio" name="radio" value="">
+        <label for="radiosell">Sell</label> <input type="radio" name="radio" value="">
+      </form>
+    </div>
+
+    <footer>
+      <span>&copy; Ayush Kumar May 16, 2021.</span>
+    </footer>
   </body>
 </html>
