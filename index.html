@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>Crypto Calculator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./master.css">
-    <script src="script.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./colors.css">
   </head>
   <body>
     <header>
@@ -13,16 +14,26 @@
     </header>
 
     <div class="body">
-      <form class="profit-calc" action="index.html" method="post">
-        <label for="qty">Quantity</label> <input type="number" name="qty"><br>
-        <label for="price">Price</label> <input type="number" name="price"><br>
-        <label for="radiobuy">Buy</label> <input type="radio" name="radio" value="">
-        <label for="radiosell">Sell</label> <input type="radio" name="radio" value="">
-      </form>
+      <center><button id="authorize_button" style="width:30%;display:block;" class="btn btn-primary">Sign In</button></center>
+      <button id="signout_button" style="display:none;float:right;" class="btn btn-outline-danger"><i class="bi bi-door-closed"></i></button>
+
+      <pre id="content" style="white-space: pre-wrap;"></pre>
     </div>
 
     <footer>
       <span>&copy; Ayush Kumar May 16, 2021.</span>
     </footer>
+
+    <!-- ========================================================= -->
+    <!-- Calling runtime scripts -->
+    <!-- ========================================================= -->
+
+    <!-- Application script -->
+    <script src="script.js" charset="utf-8" type="text/javascript"></script>
+    <!-- Google APIs onLoad event watcher and resolver scripts -->
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
   </body>
 </html>
