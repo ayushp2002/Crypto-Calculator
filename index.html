@@ -13,31 +13,65 @@
     <!-- <script src="./anim.js" charset="utf-8"></script> -->
 
     <header id="header">
-      <h1 id="headerH1">Crypto Calculator</h1>
-      <nav>
-        <ul>
-          <li id="linkInrHist">INR History</li>
-          <li id="linkUsdtHist">USDT History</li>
+      <!-- <h1 id="headerH1"></h1> -->
+      <!-- <nav>
+        <ul class="nav justify-content-center">
+          <li id="linkInrHist" class="nav-item">INR History</li>
+          <li id="linkUsdtHist" class="nav-item">USDT History</li>
         </ul>
+      </nav> -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand"><img src="./favicon.png" height="30px">Crypto Calculator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Link2</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Transaction History</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-md-0">
+            <!-- <input class="form-control" type="text" placeholder="Search"> -->
+            <button id="authorize_button" class="btn btn-success">Sign In</button>
+            <button id="signout_button" class="btn btn-danger"><i class="bi bi-door-closed"></i></button>
+          </form>
+        </div>
       </nav>
-      <button id="authorize_button" class="btn btn-success">Sign In</button>
-      <button id="signout_button" class="btn btn-danger"><i class="bi bi-door-closed"></i></button>
     </header>
 
     <div class="body" id="body">
 
-      <input type="text" id="numberinput1" placeholder="Quantity" style="display:none">
-      <input type="text" id="numberinput2" placeholder="Price" style="display:none">
-      <button type="button" id="calculatebutton" style="display:none">Calculate</button>
-
       <div id="tableView">
         <h2 id="tableViewHeading"></h2>
-        <table id="inrDataTable" class="table table-bordered table-striped table-hover">
+        <table class="table table-bordered table-striped table-hover">
           <thead class="table-dark">
             <tr id="tableViewHeadRow"> <!-- Append data here in JS --> </tr>
           </thead>
           <tbody id="tableViewBody"> <!-- Append data here in JS --> </tbody>
         </table>
+      </div>
+
+      <div id="summaryView">
+        <h2>Account Summary</h2>
+        <div class="">
+
+        </div>
       </div>
 
       <pre id="content" style="white-space: pre-wrap;"></pre>
@@ -47,9 +81,9 @@
       <span>&copy; Ayush Kumar May 16, 2021.</span>
     </footer>
 
-    <!-- ========================================================= -->
-    <!-- Calling runtime scripts -->
-    <!-- ========================================================= -->
+    <!-- =========================================================
+      Calling runtime scripts at the end to load pages faster
+    ========================================================== -->
 
     <!-- Application script -->
     <script src="script.js" charset="utf-8" type="text/javascript"></script>
@@ -58,5 +92,8 @@
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
