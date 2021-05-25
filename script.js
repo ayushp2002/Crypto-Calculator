@@ -32,6 +32,15 @@ var tableViewHeading = document.getElementById('tableViewHeading');
 var tableViewHeadRow = document.getElementById('tableViewHeadRow');
 var linkInrHist = document.getElementById('linkInrHist');
 var linkUsdtHist = document.getElementById('linkUsdtHist');
+var dashboardView = document.getElementById('dashboardView');
+var loadingSpinner = document.getElementById('loadingSpinner');
+
+window.onload = function () {
+  loadingSpinner.style.display = 'none';
+};
+// window.onunload = function () {
+//   loadingSpinner.style.display = 'block';
+// };
 
 // ================================================
 // Begin of utility functions
