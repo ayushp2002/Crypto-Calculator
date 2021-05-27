@@ -13,8 +13,77 @@
     <link rel="stylesheet" href="./colors.css">
   </head>
   <body class="d-flex flex-column h-100">
-    
 
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 px-4 mb-4 border-bottom border-secondary fixed-top bg-dark">
+      <a href="" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img src="./favicon.png" height="32" width="32" class="">
+        <span class="navbar-brand ms-2 text-light">Crypto Calculator</span>
+      </a>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-light">Home</a></li>
+        <li><a href="#" class="nav-link px-2 link-light">Features</a></li>
+        <li><a href="#" class="nav-link px-2 link-light">Pricing</a></li>
+        <li><a href="#" class="nav-link px-2 link-light">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2 link-light">About</a></li>
+      </ul>
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-success me-2">Login</button>
+        <button type="button" class="btn btn-warning">Sign-up</button>
+      </div>
+    </header>
+
+    <div class="container-fluid pb-3 mt-5 bg-dark">
+      <div class="d-grid gap-3 mt-5" style="grid-template-columns: 3fr 3fr 3fr 1fr;">
+        <div class="bg-light border rounded-3 p-4">
+          <div class="d-grid" style="grid-template-columns: 1fr 5fr;">
+            <div class="icon-square bg-light text-dark flex-shrink-0">
+              <img src="./resources/INR.svg" alt="INR" height="38px" width="38px">
+            </div>
+            <div>
+              <h2>123,456.78</h2>
+              <h4 class="text-secondary">Indian Rupee - ₹</h4>
+              <a href="#" class="btn btn-outline-primary">History</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-light border rounded-3 p-4">
+          <div class="d-grid" style="grid-template-columns: 1fr 5fr;">
+            <div class="icon-square bg-light text-dark flex-shrink-0">
+              <img src="./resources/USDT.png" alt="USDT" height="38px" width="38px">
+            </div>
+            <div>
+              <h2>1,234.56</h2>
+              <h4 class="text-secondary">Tether - USDT</h4>
+              <a href="#" class="btn btn-outline-primary">History</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-light border rounded-3 p-4">
+          <div class="d-grid" style="grid-template-columns: 1fr 5fr;">
+            <div class="icon-square bg-light text-dark flex-shrink-0">
+              <img src="./resources/BTC.png" alt="INR" height="38px" width="38px">
+            </div>
+            <div>
+              <h2>1.234</h2>
+              <h4 class="text-secondary">Bitcoin - BTC</h4>
+              <a href="#" class="btn btn-outline-primary">History</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-light border rounded-3 p-4">
+          <div class="d-grid" style="grid-template-columns: 1fr;">
+            <!-- <div class="icon-square bg-light text-dark flex-shrink-0">
+              <img src="./resources/BTC.png" alt="INR" height="38px" width="38px">
+            </div> -->
+            <div>
+              <h2>Other Balances</h2>
+              <!-- <h4 class="text-secondary"></h4> -->
+              <a href="#" class="btn btn-outline-primary">History</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- =========================================================
       Calling runtime scripts at the end to load pages faster
     ========================================================== -->
