@@ -1,0 +1,52 @@
+<div class="container-fluid pb-3 mt-5 bg-dark">
+  <div class="d-grid gap-3 mt-5" style="grid-template-columns: 3fr 3fr 3fr 1fr;">
+    <div class="bg-light border rounded-3 p-4">
+      <div class="d-grid" style="grid-template-columns: 1fr 5fr;">
+        <div class="icon-square bg-light text-dark flex-shrink-0">
+          <img src="./resources/INR.svg" alt="INR" height="38px" width="38px">
+        </div>
+        <div>
+          <h2>123,456.78</h2>
+          <h4 class="text-secondary">Indian Rupee - ₹</h4>
+          <a href="#" class="btn btn-outline-primary">History</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light border rounded-3 p-4">
+      <div class="d-grid" style="grid-template-columns: 1fr 5fr;">
+        <div class="icon-square bg-light text-dark flex-shrink-0">
+          <img src="./resources/USDT.png" alt="USDT" height="38px" width="38px">
+        </div>
+        <div>
+          <h2>1,234.56</h2>
+          <h4 class="text-secondary">Tether - USDT</h4>
+          <a href="#" class="btn btn-outline-primary">History</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light border rounded-3 p-4">
+      <div class="d-grid" style="grid-template-columns: 1fr 5fr;">
+        <div class="icon-square bg-light text-dark flex-shrink-0">
+          <img src="./resources/BTC.png" alt="INR" height="38px" width="38px">
+        </div>
+        <div>
+          <h2>1.234</h2>
+          <h4 class="text-secondary">Bitcoin - BTC</h4>
+          <a href="#" class="btn btn-outline-primary">History</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light border rounded-3 p-4">
+      <div class="d-grid" style="grid-template-columns: 1fr;">
+        <!-- <div class="icon-square bg-light text-dark flex-shrink-0">
+          <img src="./resources/BTC.png" alt="INR" height="38px" width="38px">
+        </div> -->
+        <div>
+          <h2>Other Balances</h2>
+          <!-- <h4 class="text-secondary"></h4> -->
+          <a href="#" class="btn btn-outline-primary">History</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

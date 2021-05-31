@@ -31,8 +31,8 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Transaction History</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" id="linkInrHist">INR</a></li>
-                  <li><a class="dropdown-item" id="linkUsdtHist">USDT</a></li>
+                  <li><a class="dropdown-item" id="linkHist">History</a></li>
+                  <li><a class="dropdown-item" id="linkCurrBal">Currency Balance</a></li>
                 </ul>
               </li>
             </ul>
@@ -45,17 +45,17 @@
       </nav>
     </header>
 
-    <div class="d-flex justify-content-center">
+    <!-- <div class="d-flex justify-content-center">
       <div class="spinner-border" role="status" style="height:5rem;width:5rem;border-width:1px;" id="loadingSpinner">
-        <!-- <span class="visually-hidden">Loading...</span> -->
+        <!- <span class="visually-hidden">Loading...</span> ->
       </div>
-    </div>
+    </div> -->
 
     <main class="body" id="body">
 
       <div id="tableView">
         <h2 id="tableViewHeading"></h2>
-        <table class="table table-bordered table-striped table-hover">
+        <table class="table table-bordered table-hover">
           <thead class="table-dark">
             <tr id="tableViewHeadRow"> <!-- Append data here in JS --> </tr>
           </thead>
@@ -85,7 +85,7 @@
     ========================================================== -->
 
     <!-- Application script -->
-    <script src="script.js" charset="utf-8" type="text/javascript"></script>
+    <script src="scriptOld.js" charset="utf-8" type="text/javascript"></script>
     <!-- Google APIs onLoad event watcher and resolver scripts -->
     <script async defer src="https://apis.google.com/js/api.js"
       onload="this.onload=function(){};handleClientLoad()"
